@@ -1,13 +1,11 @@
-import { UPDATE_LOCATION } from '../constants/actions';
+import { UPDATE_LOGIN_INPUT_TEXT } from '../constants/actions';
 
 var initialState = {
-  currentJourney: {}
 };
 
-// TODO: Fix this to better account for tracking lat/lon
-function updateJourney(state = initialState, action) {
+function updateLoginText(state = initialState, action) {
   switch (action.type) {
-    case UPDATE_LOCATION:
+    case UPDATE_LOGIN_INPUT_TEXT:
       let newVal = {};
       newVal[action.field] = action.text;
       return {
@@ -19,4 +17,4 @@ function updateJourney(state = initialState, action) {
   }
 }
 
-export default updateJourney;
+export default updateLoginText;

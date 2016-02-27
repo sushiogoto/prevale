@@ -1,10 +1,11 @@
-import { UPDATE_LOCATION } from '../constants/actions';
+import { UPDATE_LOGIN_INPUT_TEXT } from '../constants/actions';
 
 import api from '../utils/api';
 
-export function updateLocation(data) {
+export function updateLoginInputText(field, text) {
   return {
-    type: UPDATE_LOCATION,
-    data: data
-  }
+    type: UPDATE_LOGIN_INPUT_TEXT,
+    field,
+    text
+  };
 };

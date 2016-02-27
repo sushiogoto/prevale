@@ -4,6 +4,7 @@ import Map from '../components/Map';
 import * as MapActions from '../actions/map';
 
 function mapStateToProps(state) {
+  console.log("Map state is: ", state);
   return {
     currentJourney: state.map.currentJourney
   };
