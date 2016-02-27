@@ -1,0 +1,2 @@
+// MAP
+export const UPDATE_LOCATION = 'UPDATE_LOCATION';
